@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<title>Halsefjorden 158</title>
+	
+	<style type="text/css">
+		  h1 {font-size: 30px; font-family: arial;}
+		  h2 {font-size: 15px; font-family: tahoma;}
+		  p {font-size: 15px; font-family: arial;}
+		  li {font-size: 15px; font-family: arial}
+	</style>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+></script>
+	</head>
+
+	<body>
+	<h1>Halsefjorden</h1>
+	<h2>Området är stängt</h2>
+	<img src="karta-158-halsefjorden-inkl.-klassificerad-zon-ostron-500x354.jpeg" alt="Karta över Halsefjordens produktionsområde" width="500px" height="354px" />
+	<script type="text/javascript">
+	$(document).ready(function() {
+		console.log("hello");
+		$.get("https://www.livsmedelsverket.se/produktion-handel--kontroll/livsmedelskontroll/sok---muselkontroll-oppna-och-stangda-produktionsomraden", function(data) {
+			console.log("hello 2", data);
+			
+		});
+		
+	});
+	</script>
+
+	</body>
+</html>
